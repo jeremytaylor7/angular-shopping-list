@@ -1,0 +1,5 @@
+<div *ngFor="let item of listItems; let i = index">
+  <p class="item">{{item}}</p>
+  <input type="checkbox"/>
+  <button class="remove" (click)="deleteItem(i)">Delete</button>
+</div>

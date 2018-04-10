@@ -1,0 +1,6 @@
+<div>
+  <input placeholder="Add a shopping list item"
+  (keyup)="onKey($event)">
+  <button (click)="onClick($event)">Add Item</button>
+</div>
+<app-shopping-item [listItems]="items" ></app-shopping-item>
